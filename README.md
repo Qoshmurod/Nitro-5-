@@ -2,6 +2,14 @@
 
 Neon uslubidagi arkada poyga o'yini. Brauzerda ishlaydi, o'rnatish kerak emas.
 
+## Loyiha vazifasi
+
+**Nitro 5** — brauzerda o'ynaladigan, tez va qiziqarli poyga o'yini. Maqsad — neon yo'lda to'siqlardan qochib, iloji boricha uzoqqa borish va eng ko'p ochko to'plash.
+
+- 🎮 **O'yinchiga:** qisqa, ammo qayta-qayta o'ynagisi keladigan poygalar — kombo, sakrash, bonuslar va rekordlar.
+- 📈 **Rivojlanish:** tanga yig'ib yangi mashinalar ochish, ularni yaxshilash va vazifalarni bajarish.
+- 💻 **Texnik jihat:** faqat HTML, CSS va JavaScript — server, kutubxona yoki o'rnatish talab qilinmaydi. Kompyuterda ham, telefonda ham ishlaydi.
+
 ## Ishga tushirish
 
 `index.html` faylini brauzerda oching. Yoki lokal server orqali:
