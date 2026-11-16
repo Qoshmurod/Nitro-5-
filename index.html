@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#07021a">
+  <title>Nitro 5 — Neon Poyga</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="stage">
+    <canvas id="game" aria-label="Nitro 5 o'yin maydoni"></canvas>
+
+    <!-- Bosh menyu -->
+    <div id="menu" class="overlay">
+      <div class="wallet">🪙 <b id="coinsMenu">0</b></div>
+      <h1 class="logo">NITRO<span>5</span></h1>
+      <p class="tag">Neon yo'llarda tezlik poygasi</p>
+      <button id="startBtn" class="btn primary">BOSHLASH</button>
+      <button id="garageBtn" class="btn">🚗 GARAJ</button>
+      <div class="panel">
+        <h2>🎯 Vazifalar</h2>
+        <ul id="missionsMenu" class="missions"></ul>
+      </div>
+      <div class="panel">
+        <h2>🏆 Rekordlar</h2>
+        <ol id="lbMenu" class="lb"></ol>
+      </div>
+      <div class="help">
+        <div><kbd>←</kbd><kbd>→</kbd> / <kbd>A</kbd><kbd>D</kbd> boshqarish · <kbd>Space</kbd> nitro</div>
+        <div>To'siq yonidan <b>yaqin</b> o'ting — kombo oshadi!</div>
+        <div><kbd>P</kbd> pauza · <kbd>M</kbd> ovoz</div>
+      </div>
+    </div>
+
+    <!-- Garaj -->
+    <div id="garage" class="overlay hidden">
+      <h2 class="big">GARAJ</h2>
+      <div class="wallet-inline">🪙 <b id="coinsGarage">0</b></div>
+      <div id="skins" class="skins"></div>
+      <button id="garageBack" class="btn primary">ORQAGA</button>
+    </div>
+
+    <!-- Pauza -->
+    <div id="pause" class="overlay hidden">
+      <h2 class="big">PAUZA</h2>
+      <button id="resumeBtn" class="btn primary">DAVOM ETISH</button>
+      <button id="quitBtn" class="btn">Menyuga qaytish</button>
+    </div>
+
+    <!-- O'yin tugadi -->
+    <div id="over" class="overlay hidden">
+      <h2 class="big crash">HALOKAT!</h2>
+      <p class="final">Ochko: <b id="finalScore">0</b></p>
+      <p class="stats" id="finalStats"></p>
+      <p class="earned" id="earned"></p>
+      <form id="nameForm" class="hidden" autocomplete="off">
+        <label for="nameInput">✨ Yangi rekord! Ismingizni kiriting:</label>
+        <div class="row">
+          <input id="nameInput" maxlength="12" placeholder="Poygachi" required>
+          <button class="btn primary" type="submit">Saqlash</button>
+        </div>
+      </form>
+      <button id="againBtn" class="btn primary">QAYTA O'YNASH</button>
+      <div class="panel">
+        <h2>🎯 Vazifalar</h2>
+        <ul id="missionsOver" class="missions"></ul>
+      </div>
+      <div class="panel">
+        <h2>🏆 Rekordlar</h2>
+        <ol id="lbOver" class="lb"></ol>
+      </div>
+      <button id="menuBtn" class="btn">Menyu</button>
+    </div>
+
+    <!-- Sensorli boshqaruv (telefon) -->
+    <div id="touch" class="hidden">
+      <button class="tbtn" data-act="left" aria-label="Chapga">◀</button>
+      <button class="tbtn nitro" data-act="nitro" aria-label="Nitro">NITRO</button>
+      <button class="tbtn" data-act="right" aria-label="O'ngga">▶</button>
+    </div>
+    <button id="muteBtn" class="icon-btn" aria-label="Ovozni yoqish/o'chirish">🔊</button>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
