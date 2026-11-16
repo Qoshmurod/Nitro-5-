@@ -16,6 +16,7 @@
       <div class="wallet">🪙 <b id="coinsMenu">0</b></div>
       <h1 class="logo">NITRO<span>5</span></h1>
       <p class="tag">Neon yo'llarda tezlik poygasi</p>
+      <div id="daily" class="daily hidden"></div>
       <button id="startBtn" class="btn primary">BOSHLASH</button>
       <button id="garageBtn" class="btn">🚗 GARAJ</button>
       <div class="panel">
@@ -29,6 +30,7 @@
       <div class="help">
         <div><kbd>←</kbd><kbd>→</kbd> / <kbd>A</kbd><kbd>D</kbd> boshqarish · <kbd>Space</kbd> nitro</div>
         <div>To'siq yonidan <b>yaqin</b> o'ting — kombo oshadi!</div>
+        <div>🛫 Tramplin bilan to'siqlar ustidan sakrang!</div>
         <div><kbd>P</kbd> pauza · <kbd>M</kbd> ovoz</div>
       </div>
     </div>
@@ -37,8 +39,22 @@
     <div id="garage" class="overlay hidden">
       <h2 class="big">GARAJ</h2>
       <div class="wallet-inline">🪙 <b id="coinsGarage">0</b></div>
+      <div class="tabs">
+        <button class="tab active" data-tab="skins">🚗 Mashinalar</button>
+        <button class="tab" data-tab="upgrades">⚡ Yaxshilash</button>
+      </div>
       <div id="skins" class="skins"></div>
+      <div id="upgrades" class="upgrades hidden"></div>
       <button id="garageBack" class="btn primary">ORQAGA</button>
+    </div>
+
+    <!-- Davom etish taklifi -->
+    <div id="revive" class="overlay hidden">
+      <h2 class="big crash">HALOKAT!</h2>
+      <p class="final">Poygani davom ettirasizmi?</p>
+      <div class="timer"><i id="reviveBar"></i></div>
+      <button id="reviveBtn" class="btn primary gold">🪙 100 — DAVOM ETISH</button>
+      <button id="skipBtn" class="btn">Yo'q, rahmat</button>
     </div>
 
     <!-- Pauza -->
