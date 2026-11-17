@@ -53,3 +53,8 @@ Barcha natijalar brauzerning o'zida (`localStorage`) saqlanadi.
 - `index.html` — sahifa va menyular
 - `style.css` — neon dizayn
 - `game.js` — o'yin mantiqi, ovoz va musiqa (Canvas 2D, Web Audio; kutubxonasiz)
+
+## Litsenziya
+
+Loyiha [MIT litsenziyasi](./LICENSE) asosida tarqatiladi.
+Norasmiy o'zbekcha tarjimasi: [LICENSE.uz.md](./LICENSE.uz.md).
