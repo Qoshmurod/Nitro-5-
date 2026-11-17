@@ -466,7 +466,7 @@
       obstacles: [], pickups: [], particles: [], texts: [], toasts: [],
       spawnAcc: 0, nextGap: 380,
       shake: 0, roadOffset: 0, crashT: 0, count: 0, slowT: 0, reviveT: 0, revived: false,
-      nearMisses: 0, coins: 0, coinsCollected: 0, missionCoins: 0, jumps: 0, flips: 0,
+      nearMisses: 0, coins: 0, coinsCollected: 0, missionCoins: 0, jumps: 0,
       flash: 0, flashColor: '57,255,136',
       combo: 0, comboT: 0, mult: 1, maxMult: 1,
       shield: false, invuln: 0, magnetT: 0, magnetMax: 8, jumpT: 0,
@@ -780,7 +780,6 @@
           if (!o.jumped) {
             o.jumped = true;
             o.passed = true;
-            G.flips++;
             const bonus = Math.round(150 * G.mult);
             G.score += bonus;
             floatText(G.px, PLAYER_Y - 90, `USTIDAN! +${bonus}`, COLORS.violet, 24);
@@ -1700,7 +1699,6 @@
     $('earned').textContent = `+${earned} 🪙 tanga` +
       (G.missionCoins ? ` (vazifalardan ${G.missionCoins})` : '') + ` · Jami: ${fmt(profile.coins)}` +
       (goal ? `\n${goal}` : '');
-    $('earned').style.whiteSpace = 'pre-line';
     renderMissions($('missionsOver'), summary);
     renderLB($('lbOver'), null, 5);
     if (qualifies(score)) {
@@ -1796,7 +1794,4 @@
   }
   showMenu();
   requestAnimationFrame(frame);
-
-  // Test uchun (konsoldan holatni ko'rish)
-  window.__nitro = { get state() { return state; }, get game() { return G; }, get profile() { return profile; } };
 })();

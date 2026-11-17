@@ -187,7 +187,7 @@ kbd {
   text-shadow: 0 0 8px rgba(255, 210, 63, .6);
 }
 .wallet-inline { font-size: 20px; color: #ffd23f; margin-top: -6px; }
-.earned { margin: 0; color: #ffd23f; font-weight: 700; }
+.earned { margin: 0; color: #ffd23f; font-weight: 700; white-space: pre-line; }
 
 .missions { list-style: none; margin: 0; padding: 0; font-size: 13px; text-align: left; }
 .missions li {
